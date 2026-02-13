@@ -4,9 +4,6 @@ name: "jaffle_shop"
 version: "3.0.0"
 require-dbt-version: ">=1.5.0"
 
-dbt-cloud:
-    project-id: 123456 # update with your project ID in workshop account!
-
 profile: upgrading_to_fusion
 
 model-paths: ["models"]
@@ -53,12 +50,13 @@ models:
       +materialized: view
     marts:
       +materialized: table
-      +persist_docs:   # Missing + prefix (dbt Core ignores, Fusion validates)
+      persist_docs:   # Missing + prefix (dbt Core ignores, Fusion validates)
         relation: true
         columns: true
 
 seeds:
   jaffle_shop:
-    +schema: raw
+    +database: snowflake_learning_db
+    +schema: jaffle_shop
     jaffle-data:
       +enabled: "{{ var('load_source_data', false) }}"

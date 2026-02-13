@@ -3,14 +3,12 @@ upgrading_to_fusion:
   outputs:
     dev:
       type: snowflake
-      account: YDA41575
-      user: training_user
-      role: transformer
+      account: your_account_id
 
-      password: # enter password from training slides here
-
-      database: dbt_learn
-      warehouse: transformer_coalesce
-      schema: # enter your schema here
-      threads: 4
-      client_session_keep_alive: False
+      user: trouze
+      password: your_password_here # enter password you used to signup for Snowflake demo account here
+      role: ACCOUNTADMIN
+      
+      database: analytics
+      warehouse: compute_wh
+      schema: dbt_trouze

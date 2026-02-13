@@ -1,20 +1,11 @@
-# ⚡ dbt Fusion Upgrade Training
+# ⚡ dbt Fusion Upgrade Workshop
 
-Welcome to the **Coalesce 2025 dbt Fusion Upgrade Training**! This training repository provides hands-on experience upgrading from **dbt Core to dbt Fusion**. Below you'll find useful links and information to following along in your own sandbox.
-
-## Workshop Account Setup
-
-Use this link: [https://workshops.us1.dbt.com/workshop](https://workshops.us1.dbt.com/workshop)
-<br>
-Find the course by name: Upgrading to Fusion
-<br>
-Passcode `Coalesce2025!`
+Welcome to the **dbt Fusion Upgrade Workshop**! This training repository provides hands-on experience upgrading from **dbt Core to dbt Fusion**. Below you'll find useful links and information to following along in your own sandbox.
 
 ## Helpful Links
 
-- Google Slides: [https://docs.google.com/presentation/d/19SHxMd5H2_OF4MqJgyCIv96MrxGpXpGu_DPtpRYAwhg/edit?usp=sharing](https://docs.google.com/presentation/d/19SHxMd5H2_OF4MqJgyCIv96MrxGpXpGu_DPtpRYAwhg/edit?usp=sharing)
-- Demo Repository: [https://github.com/dbt-labs/Coalesce-2025-Upgrading-to-Fusion](https://github.com/dbt-labs/Coalesce-2025-Upgrading-to-Fusion)
-- [Clone Environment Setup](https://share.1password.com/s#0qp-sDi8LWrwr6TwWojHl3J2-e_1tQPj0BPWlQswQQs)
+- Demo Repository: [https://github.com/dbt-labs/upgrading-to-fusion-workshop](https://github.com/dbt-labs/upgrading-to-fusion-workshop)
+- Signup for Snowflake demo account: [https://signup.snowflake.com/](https://signup.snowflake.com/)
 
 ## Getting your project compiling
 
@@ -23,9 +14,3 @@ If you're not able to get your project to compile by the end of the hands-on por
 ## After the Training
 
 Try it out on your own project at home!
-
-You'll have access to the workshop account for 7 days if you need to go back and remember anything you did during this exercise.
-
-## Survey
-
-Please use [this link](https://dbtlearn.typeform.com/coalesce-2025) to give feedback on the training!

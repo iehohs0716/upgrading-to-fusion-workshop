@@ -4,9 +4,10 @@ venv
 .env
 env
 
-target/
 dbt_packages/
+dbt_internal_packages/
 logs/
+target/
 
 .DS_Store
 
