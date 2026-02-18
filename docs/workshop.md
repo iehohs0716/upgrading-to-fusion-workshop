@@ -14,6 +14,7 @@ Before the workshop, make sure you have the following installed:
 ```bash
 git clone https://github.com/dbt-labs/upgrading-to-fusion-workshop.git
 cd upgrading-to-fusion-workshop
+git checkout -b your-initials-fusion-upgrade
 ```
 
 ## 2. Set up a Snowflake demo account
@@ -44,6 +45,7 @@ uv venv --python 3.12 .venv
 source .venv/bin/activate
 uv pip install dbt-snowflake
 dbt seed --vars 'load_source_data: true'
+dbt build
 ```
 
 ## 5. Install the Fusion CLI
