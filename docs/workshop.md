@@ -19,7 +19,7 @@ git checkout -b your-initials-fusion-upgrade
 
 ## 2. Set up a Snowflake demo account
 
-1. Go to [signup.snowflake.com](https://signup.snowflake.com/) (no credit card required)
+1. Go to [signup.snowflake.com](https://signup.snowflake.com/) (no credit card required, access for 30 days, with $400 of credit)
 2. Enter your name, email, company, and job title
 3. Check your email for "Activate your Snowflake account" and click the activation link
 4. Set your username and password
