@@ -31,8 +31,6 @@ exposures:
     url: "https://company.looker.com/customer-segments"
     description: "Monthly customer segmentation report for marketing team"
     depends_on:
-      - ref('customer_segments_python')  # Python model dependency
-      - ref('customer_insights_python')
       - ref('customer_scd2')
 
     owner:
@@ -71,8 +69,6 @@ exposures:
     type: ml
     description: "Data pipeline feeding machine learning model training"
     depends_on:
-      - ref('ml_predictions_python')  # Python model
-      - ref('customer_insights_python')
       - ref('advanced_state_selection')
 
     owner:
