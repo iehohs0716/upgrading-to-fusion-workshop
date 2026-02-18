@@ -18,7 +18,7 @@ The goal: gain hands-on experience troubleshooting and adapting real-world patte
    - update the `profiles.yml` and/or the `dbt_project.yml` file to use your Snowflake `ZNA` creds
    - Make sure you run `dbt seed` in dbt Core first to create the underlying data sources
    - Update the repo from dbt Core to dbt Fusion.
-     - If in VC Code, start by running the migration helper `dbtf init --fusion-upgrade` and follow the workflow
+     - In VS Code, start by running the migration helper `dbtf init --fusion-upgrade` and follow the workflow
      - This will run the autofix package, anything left over will need to be converted by hand
    - Work through both the **hard blockers** (things that prevent Fusion from compiling/running until fixed) and **soft blockers** (warnings, best practices, or optional improvements).  
 
