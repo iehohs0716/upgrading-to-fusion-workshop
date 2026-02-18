@@ -3,7 +3,6 @@
     materialized='table',
     access='private',
     group='finance',
-    deprecation_date='2024-08-01',
     contract={'enforced': true},
     description='Protected financial reporting model with enhanced governance'
   )
