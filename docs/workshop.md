@@ -96,6 +96,7 @@ Run `dbtf compile`. You may hit the following:
 
 - **`order_line_items_legacy`** — the `dbt_utils` upgrade renamed `surrogate_key` to `generate_surrogate_key`. Update the macro call in the model.
 - **`monthly_payment_analysis_pivot_any`** — Fusion's static analysis requires deterministic column definitions. Refactor the `PIVOT` to use explicit `CASE` statements, or opt out with `static_analysis='off'` in the model config.
+- dbt Labs is releasing updates to how static analysis works!
 - **Remaining warnings in logs** — address any additional warnings surfaced during compilation.
 
 Once resolved, `dbtf compile` should succeed.
