@@ -47,6 +47,6 @@ models:
         constraints:
           - type: not_null
         tests:
-          - relationships:
-              to: ref('customers')
-              field: customer_id
+          - dbt_constraints.foreign_key:
+              pk_table_name: ref('customers')
+              pk_column_name: customer_id
