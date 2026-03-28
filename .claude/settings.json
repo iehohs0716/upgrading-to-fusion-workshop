@@ -1,0 +1,14 @@
+{
+  "extraKnownMarketplaces": {
+    "dbt-agent-marketplace": {
+      "source": {
+        "source": "github",
+        "repo": "dbt-labs/dbt-agent-skills"
+      }
+    }
+  },
+  "enabledPlugins": {
+    "dbt@dbt-agent-marketplace": true,
+    "dbt-migration@dbt-agent-marketplace": true
+  }
+}
