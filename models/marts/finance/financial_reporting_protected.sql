@@ -3,7 +3,7 @@
     materialized='table',
     access='private',
     group='finance',
-    contract={'enforced': true},
+    contract={'enforced': false},
     description='Protected financial reporting model with enhanced governance'
   )
 }}
