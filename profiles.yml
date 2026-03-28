@@ -1,25 +1,26 @@
+definition:
+  - &common_setting
+    type: snowflake
+    account: "{{ env_var('ACCOUNT') }}"
+    connect_timeout: 60
+    threads: 16
+    user: "{{ env_var('USER_NAME') }}"
+    # キーペア認証の場合
+    private_key_path: "{{ env_var('PRIVATE_KEY_PATH') }}"
+    database: "{{ env_var('DATABASE_NAME') }}"
+
 upgrading_to_fusion:
   target: dev
   outputs:
     dev:
       type: snowflake
-      account: "{{ env_var('ACCOUNT') }}"
-
-      user: "{{ env_var('USER') }}"
-      password: "{{ env_var('PASSWORD') }}" # enter password you used to signup for Snowflake demo account here
       role: ACCOUNTADMIN
-      
-      database: snowflake_learning_db
       warehouse: compute_wh
       schema: dbt_trouze
+      !!merge <<: *common_setting
     fusion_dev:
       type: snowflake
-      account: "{{ env_var('ACCOUNT') }}"
-
-      user: "{{ env_var('USER') }}"
-      password: "{{ env_var('PASSWORD') }}" # enter password you used to signup for Snowflake demo account here
       role: ACCOUNTADMIN
-      
-      database: snowflake_learning_db
       warehouse: compute_wh
       schema: fusion_dev
+      !!merge <<: *common_setting
